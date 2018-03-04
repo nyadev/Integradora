@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="e.alex5.integradora.formulario">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true">
+
+            <EditText
+                android:id="@+id/Nombre"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/Edad"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="Escriba su edad"
+                android:inputType="number" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="@android:dimen/app_icon_size"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Sexo"
+                    android:layout_alignParentLeft="true" />
+
+                <RadioGroup
+                    android:id="@+id/Sexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/textView"
+                    android:layout_toRightOf="@+id/textView">
+
+
+                    <RadioButton
+                        android:id="@+id/Masculino"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Masculino" />
+
+                    <RadioButton
+                        android:id="@+id/Femenino"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Femenino" />
+
+                </RadioGroup>
+            </RelativeLayout>
+
+
+            <Spinner
+                android:id="@+id/tipopersona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frutas" />
+
+            <Spinner
+                android:id="@+id/FrutaFood"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verduras" />
+
+            <Spinner
+                android:id="@+id/VerdurasFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lácteos y derivados" />
+
+            <Spinner
+                android:id="@+id/LacteosFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Carnes, caza y embutidos" />
+
+            <Spinner
+                android:id="@+id/CarnesFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Actividades" />
+
+            <CheckBox
+                android:id="@+id/oficina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="oficina"
+                android:onClick="CheckBoxMethod"/>
+
+            <CheckBox
+                android:id="@+id/casa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="casa"
+                android:onClick="CheckBoxMethod"/>
+
+            <CheckBox
+                android:id="@+id/deporte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="deporte"
+                android:onClick="CheckBoxMethod"/>
+
+            <EditText
+                android:id="@+id/Estatura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Estatura"
+                android:inputType="numberDecimal"
+                />
+
+            <EditText
+                android:id="@+id/Masa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Masa"
+                android:inputType="numberDecimal"
+                />
+
+            <ImageButton
+                android:id="@+id/Registro"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="registrar"
+                android:src="@drawable/food" />
+
+        </LinearLayout>
+
+</ScrollView>
