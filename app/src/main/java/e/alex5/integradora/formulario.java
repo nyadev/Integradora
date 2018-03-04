@@ -211,7 +211,7 @@ public class formulario extends Activity {
         //ES MOMENTO DE ENVIAR TODA LA INFORMACIÓNA OTRA ACTIVITY
         String Mensaje = "";
 
-        if(SumaCalorias > caloriaspropias)
+        if(SumaCalorias < caloriaspropias)
         {
             Mensaje = "!Te estás pasando¡ Deberías reducir la cantidad de calorías que consumes." +
                 " Te recomentamos comer más frutas y verduras que carnes y lacteos";
